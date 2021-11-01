@@ -12,4 +12,10 @@
     <ProjectReference Include="..\HackerWe.Logic\HackerWe.Logic.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="books.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

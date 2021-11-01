@@ -20,12 +20,13 @@ namespace HackerWe.UI
 
         private void Form1_Load(object sender, EventArgs e)
         {
-          
+            Library.ReadBooksFromJSON();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-  Library.SaveBooks();
+            //Library.SaveBooks();
+            Library.SaveBooksAsJSON();
         }
     }
 }

@@ -21,6 +21,13 @@ namespace HackerWe.Entities
             return str;
         }
 
+        public string ToJSON()
+        {
+            string str;
+            str = string.Format("Id:{0},ISBN:{1},Author:{2},Name:{3},DatePublished:{4}", Id, ISBN, Author, Name, DatePublished);
+            return str;
+        }
+
         public bool IsNewBindingNeeded()
         {
             return DatePublished.Year < DateTime.Now.AddYears(20).Year;
