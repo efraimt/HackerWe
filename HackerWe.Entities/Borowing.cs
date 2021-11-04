@@ -31,5 +31,23 @@ namespace HackerWe.Entities
             Id= Guid.NewGuid();
         }
 
+
+        void ReadFromFixedLength(string line)
+        {
+            ClientId = int.Parse(line.Substring(0, 5));
+        }
+
+        /// <summary>
+        /// Writes a fixed length reperesentation of this instance
+        /// </summary>
+        /// <returns>The fixed length string</returns>
+        /// <remarks>The example does not deal with all the fields - do it at home work</remarks>
+        string WriteFixedLength()
+        {
+            string str;
+            str = string.Format("{0:5}{1:36}",ClientId,Id);
+            return str;
+        }
+
     }
 }
