@@ -16,6 +16,8 @@ namespace HackerWe.UI
     {
         Borowing borowing;
 
+        public event Action<Borowing> BorrowingSaved;
+
         public BorrowingUserControl()
         {
             InitializeComponent();
@@ -53,10 +55,12 @@ namespace HackerWe.UI
             Library.SaveBorrowings();
 
             //1. Message to the lll
+            lblMessages.Text = "Saved sucesseded";
+
             //2. Reset fields
             Reset();
             //3. Send mail to client
-
+            BorrowingSaved(borowing);
         }
 
         private void Reset()
@@ -79,6 +83,11 @@ namespace HackerWe.UI
         {
             if (cmbClients.SelectedItem != null)
                 lblClientValidMessage.Text = "";
+        }
+
+        private void dtpBorrowingDate_Enter(object sender, EventArgs e)
+        {
+            lblMessages.Text = "";
         }
     }
 }

@@ -50,6 +50,7 @@ namespace HackerWe.UI
             this.Controls.Add(this.dataGridView1);
             this.Name = "BooksUserControl";
             this.Size = new System.Drawing.Size(876, 603);
+            this.Load += new System.EventHandler(this.BooksUserControl_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

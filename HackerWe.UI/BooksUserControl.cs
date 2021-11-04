@@ -16,5 +16,10 @@ namespace HackerWe.UI
         {
             InitializeComponent();
         }
+
+        private void BooksUserControl_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

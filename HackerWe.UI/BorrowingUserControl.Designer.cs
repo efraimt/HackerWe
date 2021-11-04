@@ -39,6 +39,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.lblBorrowinDateValidationMessage = new System.Windows.Forms.Label();
             this.lblClientValidMessage = new System.Windows.Forms.Label();
+            this.lblMessages = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // dtpBorrowingDate
@@ -48,6 +49,7 @@
             this.dtpBorrowingDate.Size = new System.Drawing.Size(250, 27);
             this.dtpBorrowingDate.TabIndex = 0;
             this.dtpBorrowingDate.ValueChanged += new System.EventHandler(this.dtpBorrowingDate_ValueChanged);
+            this.dtpBorrowingDate.Enter += new System.EventHandler(this.dtpBorrowingDate_Enter);
             // 
             // label1
             // 
@@ -74,6 +76,7 @@
             this.cmbBooks.Name = "cmbBooks";
             this.cmbBooks.Size = new System.Drawing.Size(250, 28);
             this.cmbBooks.TabIndex = 3;
+            this.cmbBooks.Enter += new System.EventHandler(this.dtpBorrowingDate_Enter);
             // 
             // cmbClients
             // 
@@ -83,6 +86,7 @@
             this.cmbClients.Size = new System.Drawing.Size(250, 28);
             this.cmbClients.TabIndex = 5;
             this.cmbClients.SelectedIndexChanged += new System.EventHandler(this.cmbClients_SelectedIndexChanged);
+            this.cmbClients.Enter += new System.EventHandler(this.dtpBorrowingDate_Enter);
             // 
             // label3
             // 
@@ -142,10 +146,20 @@
             this.lblClientValidMessage.TabIndex = 10;
             this.lblClientValidMessage.Text = "clientValidMessage";
             // 
+            // lblMessages
+            // 
+            this.lblMessages.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblMessages.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblMessages.Location = new System.Drawing.Point(35, 414);
+            this.lblMessages.Name = "lblMessages";
+            this.lblMessages.Size = new System.Drawing.Size(638, 111);
+            this.lblMessages.TabIndex = 11;
+            // 
             // BorrowingUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lblMessages);
             this.Controls.Add(this.lblClientValidMessage);
             this.Controls.Add(this.lblBorrowinDateValidationMessage);
             this.Controls.Add(this.button1);
@@ -178,5 +192,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label lblBorrowinDateValidationMessage;
         private System.Windows.Forms.Label lblClientValidMessage;
+        private System.Windows.Forms.Label lblMessages;
     }
 }

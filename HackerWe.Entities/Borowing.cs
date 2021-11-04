@@ -13,7 +13,16 @@ namespace HackerWe.Entities
         public DateTime DueReturningDate => BorowingDate.AddDays(14);
         public DateTime ReturningDate { get; set; }
         public int BookId { get; set; }
-        public Book Book { get; set; }
+        
+        
+        private Book book;
+
+        public Book Book
+        {
+            get { return book; }
+            set { book = value; }
+        }
+
         public int ClientId { get; set; }
         public Client Client{ get; set; }
 

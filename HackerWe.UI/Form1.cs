@@ -18,11 +18,20 @@ namespace HackerWe.UI
             InitializeComponent();
         }
 
+        Timer timer = new Timer();
         private void Form1_Load(object sender, EventArgs e)
         {
+            timer.Interval = 5000;
+            timer.Tick += (object o, EventArgs argss) =>
+            {
+                lblMessages.Text = "";
+                timer.Stop();
+            };
+
             Library.ReadBooksFromJSON();
             Library.ReadClientsFromJSON();
         }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -32,7 +41,12 @@ namespace HackerWe.UI
 
         private void button3_Click(object sender, EventArgs e)
         {
-            BorrowingUserControl borrowingUserControl=new BorrowingUserControl();
+            BorrowingUserControl borrowingUserControl = new BorrowingUserControl();
+            borrowingUserControl.BorrowingSaved += (borrowing) =>
+            {
+                lblMessages.Text = "Borowing saved successfully "+ borrowing.Id;
+                timer.Start();
+            };
             borrowingUserControl.Parent = panel1;
 
             borrowingUserControl.Show();
