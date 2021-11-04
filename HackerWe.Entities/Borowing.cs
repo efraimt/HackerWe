@@ -14,7 +14,6 @@ namespace HackerWe.Entities
         public int BookId { get; set; }
         public Book Book { get; set; }
         public int ClientId { get; set; }
-
         public Client Client{ get; set; }   
 
     }

@@ -64,6 +64,7 @@ namespace HackerWe.UI
             this.button3.TabIndex = 2;
             this.button3.Text = "Borowing";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -80,6 +81,7 @@ namespace HackerWe.UI
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.SystemColors.Info;
             this.panel1.Location = new System.Drawing.Point(12, 135);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1054, 524);

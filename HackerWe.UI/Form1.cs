@@ -28,5 +28,13 @@ namespace HackerWe.UI
             //Library.SaveBooks();
             Library.SaveBooksAsJSON();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            BorrowingUserControl borrowingUserControl=new BorrowingUserControl();
+            borrowingUserControl.Parent = panel1;
+
+            borrowingUserControl.Show();
+        }
     }
 }
