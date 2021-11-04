@@ -3,9 +3,9 @@
         "Id": 1,
         "ISBN": "00000000-0000-0000-0000-000000000000",
         "Author": "Lior Shlein",
-        "Name": null,
+        "Name": "Consfiracy of",
         "NumberOfPages": 0,
-        "NumberOfCopies": 0,
+        "NumberOfCopies": 2,
         "NumberOfBorrowedOut": 0,
         "DatePublished": "2009-05-17T00:00:00"
     },
@@ -13,9 +13,9 @@
         "Id": 8567,
         "ISBN": "00000000-0000-0000-0000-000000000000",
         "Author": "Yogev Poren",
-        "Name": null,
+        "Name": "Ginues",
         "NumberOfPages": 0,
-        "NumberOfCopies": 0,
+        "NumberOfCopies": 2,
         "NumberOfBorrowedOut": 0,
         "DatePublished": "2003-03-27T00:00:00"
     },
@@ -23,9 +23,9 @@
         "Id": 56,
         "ISBN": "00000000-0000-0000-0000-000000000000",
         "Author": "Arthur Conan Doyle",
-        "Name": null,
+        "Name": "Poo Hadov",
         "NumberOfPages": 0,
-        "NumberOfCopies": 0,
+        "NumberOfCopies": 2,
         "NumberOfBorrowedOut": 0,
         "DatePublished": "1887-04-20T00:00:00"
     },
@@ -35,7 +35,7 @@
         "Author": "Oda",
         "Name": "One Peace",
         "NumberOfPages": 0,
-        "NumberOfCopies": 0,
+        "NumberOfCopies": 2,
         "NumberOfBorrowedOut": 0,
         "DatePublished": "2008-03-24T00:00:00"
     },
@@ -75,7 +75,7 @@
         "Author": "Marcel Proust",
         "Name": "In Search of Lost Time",
         "NumberOfPages": 525,
-        "NumberOfCopies": 0,
+        "NumberOfCopies": 2,
         "NumberOfBorrowedOut": 3,
         "DatePublished": "2009-05-17T00:00:00"
     },
@@ -85,7 +85,7 @@
         "Author": "Miguel de Cervantes",
         "Name": "Miguel de Cervantes",
         "NumberOfPages": 400,
-        "NumberOfCopies": 0,
+        "NumberOfCopies": 2,
         "NumberOfBorrowedOut": 2,
         "DatePublished": "1605-03-02T00:00:00"
     },
@@ -95,7 +95,7 @@
         "Author": "Gabriel Garcia Marquez",
         "Name": "One Hundred Years of Solitude",
         "NumberOfPages": 321,
-        "NumberOfCopies": 0,
+        "NumberOfCopies": 2,
         "NumberOfBorrowedOut": 5,
         "DatePublished": "2013-07-05T00:00:00"
     },
@@ -105,7 +105,7 @@
         "Author": "Leo Tolstoy",
         "Name": "War and Peace",
         "NumberOfPages": 900,
-        "NumberOfCopies": 0,
+        "NumberOfCopies": 2,
         "NumberOfBorrowedOut": 15,
         "DatePublished": "1980-05-15T00:00:00"
     },
@@ -115,7 +115,7 @@
         "Author": "Fyodor Dostoyevsky",
         "Name": "Crime and Punishment",
         "NumberOfPages": 276,
-        "NumberOfCopies": 0,
+        "NumberOfCopies": 2,
         "NumberOfBorrowedOut": 6,
         "DatePublished": "1993-05-17T00:00:00"
     },

@@ -36,6 +36,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.lblDueReturningdate = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.lblBorrowinDateValidationMessage = new System.Windows.Forms.Label();
+            this.lblClientValidMessage = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // dtpBorrowingDate
@@ -79,6 +82,7 @@
             this.cmbClients.Name = "cmbClients";
             this.cmbClients.Size = new System.Drawing.Size(250, 28);
             this.cmbClients.TabIndex = 5;
+            this.cmbClients.SelectedIndexChanged += new System.EventHandler(this.cmbClients_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -107,10 +111,44 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "Due Returning Date:";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(262, 289);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(156, 73);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Save";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // lblBorrowinDateValidationMessage
+            // 
+            this.lblBorrowinDateValidationMessage.AutoSize = true;
+            this.lblBorrowinDateValidationMessage.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblBorrowinDateValidationMessage.ForeColor = System.Drawing.Color.IndianRed;
+            this.lblBorrowinDateValidationMessage.Location = new System.Drawing.Point(435, 60);
+            this.lblBorrowinDateValidationMessage.Name = "lblBorrowinDateValidationMessage";
+            this.lblBorrowinDateValidationMessage.Size = new System.Drawing.Size(0, 20);
+            this.lblBorrowinDateValidationMessage.TabIndex = 9;
+            // 
+            // lblClientValidMessage
+            // 
+            this.lblClientValidMessage.AutoSize = true;
+            this.lblClientValidMessage.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblClientValidMessage.ForeColor = System.Drawing.Color.IndianRed;
+            this.lblClientValidMessage.Location = new System.Drawing.Point(435, 108);
+            this.lblClientValidMessage.Name = "lblClientValidMessage";
+            this.lblClientValidMessage.Size = new System.Drawing.Size(136, 20);
+            this.lblClientValidMessage.TabIndex = 10;
+            this.lblClientValidMessage.Text = "clientValidMessage";
+            // 
             // BorrowingUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lblClientValidMessage);
+            this.Controls.Add(this.lblBorrowinDateValidationMessage);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lblDueReturningdate);
             this.Controls.Add(this.cmbClients);
@@ -137,5 +175,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblDueReturningdate;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lblBorrowinDateValidationMessage;
+        private System.Windows.Forms.Label lblClientValidMessage;
     }
 }
